@@ -1,10 +1,49 @@
-ody {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  text-align: center;
-  margin-top: 100px;
+/* =========================
+   RESET DE BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: #2c3e50;
+/* =========================
+   VARIABLES (PRO)
+========================= */
+:root {
+  --couleur-principale: #2563eb;
+  --couleur-secondaire: #1e293b;
+  --couleur-fond: #f8fafc;
+  --couleur-texte: #0f172a;
+  --rayon: 8px;
 }
+
+/* =========================
+   STYLE GÉNÉRAL
+========================= */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--couleur-fond);
+  color: var(--couleur-texte);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   CONTENEUR PRINCIPAL
+========================= */
+.container {
+  background-color: white;
+  padding: 40px;
+  max-width: 600px;
+  width: 90%;
+  border-radius: var(--rayon);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* =========================
+   TITRES & TEXTE
+=================
